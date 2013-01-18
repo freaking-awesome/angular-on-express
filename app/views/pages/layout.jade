@@ -1,0 +1,12 @@
+doctype 5
+html(lang='ru', data-ng-app='Application')
+  head
+    title= title
+    block styles
+      link(rel='stylesheet', href='/css/app.css')
+      style
+    block scripts
+      script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js')
+      script(src='/js/app.js')
+
+  body.awesome(ng-view): block body
