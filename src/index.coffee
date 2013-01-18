@@ -7,7 +7,7 @@ app= App()
 app.configure ->
 
     # статические файлы
-    app.use App.static __dirname+'/assets'
+    app.use App.static __dirname+'/views/assets'
 
     # шаблоны вида
     app.set 'view engine', 'jade'

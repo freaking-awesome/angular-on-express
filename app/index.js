@@ -6,7 +6,7 @@ App = module.exports = require('express');
 app = App();
 
 app.configure(function() {
-  app.use(App["static"](__dirname + '/assets'));
+  app.use(App["static"](__dirname + '/views/assets'));
   app.set('view engine', 'jade');
   app.set('view options', {
     layout: false
